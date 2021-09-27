@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fe6e3570;
+    flex-wrap: wrap;
+}
+.calender-container{
+    width: 500px;
+    height: 500px;
+    padding: 30px;
+}
+
+.calender{
+    background-color: #fe6e35    ;
+    height: 600px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.185);
+    padding-top: 20px;
+}
+.month-year-container{
+    width: 90%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    height: 50px;
+}
+.month-year-container svg {
+    cursor: pointer;
+}
+.month-year-container span{
+    color: white;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+.days-container{
+    background-color: #fefefe;
+    height: calc(100% - 50px);
+    border-radius: 10px 10px 0 0 ;
+}
+.days-name , .days{
+    width: 90%;
+    display: flex;
+    margin: auto;   
+    flex-wrap: wrap;
+}
+.days-name{
+    padding:  20px 0 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.116);
+}
+
+.days{
+    height: 100%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding-top: 20px;
+}
+.d-name , .date{
+     width: calc(100% / 7);
+     text-align: center;
+}
+.date{
+    font-size: 1.5em;
+    height: calc(82% / 5);
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+.badge{
+    background-color: tomato;
+    height: 20px; 
+    width: 20px;
+    border-radius: 50%;
+    font-size: .6em;
+    line-height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    color: white;
+}
+.today{
+    background-color: coral;
+    color: white;
+    /* border-radius: 50px; */
+}
+
+.currentMonthday{
+    background-color: rgba(255, 127, 80, 0.253);
+    /* color: white; */
+}
